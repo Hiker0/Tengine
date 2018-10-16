@@ -2,6 +2,7 @@
 cmake_minimum_required (VERSION 2.8)
 project(YOLOV2)
 
+set( TENGINE_DIR /home/rock/Tengine)
 set( INSTALL_DIR ${TENGINE_DIR}/install/ )
 set( TENGINE_LIBS tengine)
 

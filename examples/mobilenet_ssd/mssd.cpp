@@ -21,7 +21,7 @@
  * Copyright (c) 2018, Open AI Lab
  * Author: chunyinglv@openailab.com
  */
-
+#include <stdio.h>
 #include <unistd.h>
 #include <iostream>
 #include <iomanip>
