@@ -35,6 +35,7 @@ add_subdirectory(faster_rcnn)
 add_subdirectory(lighten_cnn)
 add_subdirectory(imagenet_classification)
 add_subdirectory(mobilenet_ssd)
+add_subdirectory(mobilenet_ssd_camera)
 
 if( NOT ANDROID)
    add_subdirectory(caffe_wrapper)
