@@ -27,6 +27,8 @@
 #include <iomanip>
 #include <string>
 #include <vector>
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/core.hpp>
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "tengine_c_api.h"
@@ -123,7 +125,9 @@ void post_process_ssd(std::string& image_file,float threshold,float* outdata,int
         cv::putText(img, label, cv::Point(box.x0, box.y0),
                     cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0));
     }
-    cv::imwrite(save_name,img);
+    //cv::imwrite(save_name,img);
+    cv::imshow(save_name,img);
+    cv::waitKey(0);
     std::cout<<"======================================\n";
     std::cout<<"[DETECTED IMAGE SAVED]:\t"<< save_name<<"\n";
     std::cout<<"======================================\n";

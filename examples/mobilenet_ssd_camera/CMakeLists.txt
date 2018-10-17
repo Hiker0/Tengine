@@ -23,7 +23,7 @@ if( BLAS_DIR)
 endif()
 
 
-set( CODE_SRCS mssd.cpp ../common/common.cpp)
+set( CODE_SRCS mssd_camera.cpp ../common/common.cpp)
 
 #opencv
 find_package(OpenCV REQUIRED)
